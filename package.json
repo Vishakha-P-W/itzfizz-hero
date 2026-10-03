@@ -1,0 +1,25 @@
+{
+  "name": "itzfizz-hero",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:pages": "NEXT_PUBLIC_BASE_PATH=/itzfizz-hero next build",
+    "preview": "npx serve out",
+    "deploy": "NEXT_PUBLIC_BASE_PATH=/itzfizz-hero next build && gh-pages -d out -t true"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "next": "14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.1.1",
+    "postcss": "^8.4.47",
+    "serve": "^14.2.4",
+    "tailwindcss": "^3.4.13"
+  }
+}
