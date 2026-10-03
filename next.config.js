@@ -1,3 +1,5 @@
+const path = require("path");
+
 /** @type {import('next').NextConfig} */
 // Static export so the site can be hosted on GitHub Pages / Vercel.
 // For GitHub Pages set the repo name, e.g. NEXT_PUBLIC_BASE_PATH=/car-scroll-animation
@@ -7,4 +9,7 @@ module.exports = {
   output: "export",
   basePath,
   images: { unoptimized: true },
+  turbopack: {
+    root: path.resolve(__dirname),
+  },
 };

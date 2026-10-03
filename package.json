@@ -7,19 +7,15 @@
     "build": "next build",
     "build:pages": "NEXT_PUBLIC_BASE_PATH=/itzfizz-hero next build",
     "preview": "npx serve out",
-    "deploy": "NEXT_PUBLIC_BASE_PATH=/itzfizz-hero next build && gh-pages -d out -t true"
+    "start": "serve out -s -l tcp://0.0.0.0:${PORT:-3000}",
+    "deploy": "NEXT_PUBLIC_BASE_PATH=/itzfizz-hero next build && npx gh-pages -d out -t true"
   },
   "dependencies": {
     "gsap": "^3.12.5",
-    "next": "14.2.15",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "next": "^16.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "serve": "^14.2.6"
   },
-  "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "gh-pages": "^6.1.1",
-    "postcss": "^8.4.47",
-    "serve": "^14.2.4",
-    "tailwindcss": "^3.4.13"
-  }
+  "devDependencies": {}
 }
